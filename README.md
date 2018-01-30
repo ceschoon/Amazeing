@@ -3,7 +3,7 @@ Game about maze solving
 
 You are the red dot and have to join the funny red symbol (pseudo hilbert curve of order 2) in the least amount of time. 
 
-<img src=\"Screenshot.png\" />
+![alt text](Screenshot.png?raw=true "Screenshot")
 
 Options given by passing the "--help" argument:		./Maze-Generator --help
 
