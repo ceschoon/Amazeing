@@ -5,9 +5,9 @@ You are the red dot and have to join the funny red symbol (pseudo hilbert curve 
 
 ![alt text](Screenshot.png?raw=true "Screenshot")
 
-Options given by passing the "--help" argument:		./Maze-Generator --help
+Options given by passing the "--help" argument:		./Amazeing --help
 
-To generate a 101x101 labyrinth: ./Maze-Generator --mazeSizeX=101 --mazeSizeY=101
+To generate a 101x101 labyrinth: ./Amazeing --mazeSizeX=101 --mazeSizeY=101
 
 Currently, mazes are only genereted by a recursive method.
 
