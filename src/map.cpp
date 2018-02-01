@@ -125,8 +125,8 @@ void Map::recursiveDivision2(int recursionLevel)
 
 		if (recursionLevel%2==0) 
 		{
-			Map map1(2*N+1,2*randIndex+1,m_seed);
-			Map map2(2*N+1,2*(M-randIndex-1)+1,m_seed);
+			Map map1(2*N+1,2*randIndex+1,m_seed.randomWithSeed());
+			Map map2(2*N+1,2*(M-randIndex-1)+1,m_seed.randomWithSeed());
 
 			map1.recursiveDivision2(recursionLevel+1);
 			map2.recursiveDivision2(recursionLevel+1);
@@ -148,8 +148,8 @@ void Map::recursiveDivision2(int recursionLevel)
 		}
 		else
 		{
-			Map map1(2*randIndex+1,2*M+1,m_seed);
-			Map map2(2*(N-randIndex-1)+1,2*M+1,m_seed);
+			Map map1(2*randIndex+1,2*M+1,m_seed.randomWithSeed());
+			Map map2(2*(N-randIndex-1)+1,2*M+1,m_seed.randomWithSeed());
 
 			map1.recursiveDivision2(recursionLevel+1);
 			map2.recursiveDivision2(recursionLevel+1);
@@ -226,10 +226,10 @@ void Map::recursiveDivision4(int recursionLevel)
 
 		// recursion		
 		
-		Map map11(2*randI+1,2*randJ+1,m_seed);
-		Map map12(2*randI+1,2*(N-randJ-1)+1,m_seed);
-		Map map21(2*(N-randI-1)+1,2*randJ+1,m_seed);
-		Map map22(2*(N-randI-1)+1,2*(N-randJ-1)+1,m_seed);
+		Map map11(2*randI+1,2*randJ+1,m_seed.randomWithSeed());
+		Map map12(2*randI+1,2*(N-randJ-1)+1,m_seed.randomWithSeed());
+		Map map21(2*(N-randI-1)+1,2*randJ+1,m_seed.randomWithSeed());
+		Map map22(2*(N-randI-1)+1,2*(N-randJ-1)+1,m_seed.randomWithSeed());
 
 		map11.recursiveDivision4(recursionLevel+1);
 		map12.recursiveDivision4(recursionLevel+1);
