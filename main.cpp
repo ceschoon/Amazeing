@@ -134,19 +134,23 @@ int main(int argc, char *argv[])
 		{
 			prevTimeStep = timeStep;
 			
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)
+				&& !sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
 			{
 				map.tryMovePlayer(0, -1);	// matrix indices
 			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)
+					 && !sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
 			{
 				map.tryMovePlayer(0, 1);	
 			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)
+					 && !sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
 			{
 				map.tryMovePlayer(1, 0);	
 			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)
+					 && !sf::Keyboard::isKeyPressed(sf::Keyboard::LControl))
 			{
 				map.tryMovePlayer(-1, 0);	
 			}

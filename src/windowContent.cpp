@@ -10,7 +10,7 @@ WindowContent::WindowContent(sf::RenderWindow &window, Map &map)
 
 	// players
 
-	if (!m_texturePlayer.loadFromFile("Gamedata/textures/player.png"))
+	if (!m_texturePlayer.loadFromFile("resources/textures/player.png"))
 	{
     	// ERROR
 	}
@@ -18,7 +18,7 @@ WindowContent::WindowContent(sf::RenderWindow &window, Map &map)
 	
 	// end portals
 
-	if (!m_texturePortal.loadFromFile("Gamedata/textures/endPortal.png"))
+	if (!m_texturePortal.loadFromFile("resources/textures/endPortal.png"))
 	{
     	// ERROR
 	}
@@ -26,7 +26,7 @@ WindowContent::WindowContent(sf::RenderWindow &window, Map &map)
 	
 	// text
 	
-	if (!font.loadFromFile("Gamedata/fonts/NotoSans-Bold.ttf"))
+	if (!font.loadFromFile("resources/fonts/NotoSans-Bold.ttf"))
 	{
    		// error...
 	}
